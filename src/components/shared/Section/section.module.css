@@ -1,0 +1,14 @@
+.section {
+  width: var(--container-max-width);
+  max-width: var(--container-max-width-percentege);
+  background-color: var(--color-bg);
+  margin: var(--spacing-xl) auto;
+  margin-bottom: 6rem;
+  border-radius: var(--border-radius-xl);
+}
+
+@media (max-width: 768px) {
+  .section {
+    margin-bottom: var(--spacing-xl);
+  }
+}

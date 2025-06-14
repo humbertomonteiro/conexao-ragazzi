@@ -1,0 +1,11 @@
+.title {
+  text-align: center;
+  font-size: var(--font-size-xxl);
+  color: var(--text-light);
+  margin-bottom: var(--spacing-md);
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: var(--font-size-xl);
+  }
+}

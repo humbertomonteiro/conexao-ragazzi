@@ -1,0 +1,39 @@
+.container {
+  min-height: 85vh;
+}
+
+.Logo {
+  width: 350px;
+  max-width: 100%;
+}
+
+.text {
+  width: 800px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.text h1 {
+  font-size: var(--font-size-xxl);
+  line-height: var(--line-height-heading);
+  font-weight: var(--font-weight-bolder);
+}
+
+.text p {
+  color: var(--text-light-2);
+  line-height: var(--line-height-base);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: var(--spacing-lg);
+  }
+
+  .logo {
+    width: 250px;
+  }
+
+  .text h1 {
+    font-size: var(--font-size-xl);
+  }
+}

@@ -1,0 +1,23 @@
+.benefit {
+  border: 0;
+  border-radius: var(--border-radius-xl);
+  padding: var(--spacing-lg) var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  width: 100%;
+}
+
+.icon {
+  font-size: var(--font-size-xxl);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
