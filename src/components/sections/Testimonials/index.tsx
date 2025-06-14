@@ -4,7 +4,6 @@ import styles from "./testimonials.module.css";
 import CarouselSimple from "../../shared/CaroselSimple";
 import Testemony from "../../templates/Testimony";
 import ButtonPrimary from "../../shared/ButtonPrimary";
-import { IoMdArrowForward } from "react-icons/io";
 
 const listSlides = [
   {
