@@ -112,16 +112,19 @@ a:hover {
 [data-background="transparent-primary"] {
   background: var(--primary-color-transparent);
   border-radius: var(--border-radius-xl);
+  border: 1px solid var(--border-color);
 }
 
 [data-background="transparent-secondary"] {
   background: var(--secondary-color-transparent);
   border-radius: var(--border-radius-xl);
+  border: 1px solid var(--border-color);
 }
 
 [data-background="transparent-tertiary"] {
   background: var(--tertiary-color-transparent);
   border-radius: var(--border-radius-xl);
+  border: 1px solid var(--border-color);
 }
 
 /* background animation and image */
