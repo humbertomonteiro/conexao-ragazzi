@@ -21,7 +21,7 @@
     #f32c2c 100%
   ); */
   color: var(--text-light);
-  border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-xl);
   display: block;
   border: 0px;
   font-weight: var(--font-weight-bold);
