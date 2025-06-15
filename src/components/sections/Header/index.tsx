@@ -2,6 +2,8 @@ import styles from "./header.module.css";
 import ButtonPrimary from "../../shared/ButtonPrimary";
 import Section from "../../shared/Section";
 
+import { MdOutlinePix } from "react-icons/md";
+
 const Header = () => {
   return (
     <Section>
@@ -21,7 +23,12 @@ const Header = () => {
             Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Quisquam, quos. Lorem ipsum dolor sit amet
           </p>
-          <ButtonPrimary>Comprar agora</ButtonPrimary>
+          <div className={styles.buttons}>
+            <ButtonPrimary icon={<MdOutlinePix />}>Comprar pix</ButtonPrimary>
+            <ButtonPrimary data-button-color="secondary">
+              Comprar agora
+            </ButtonPrimary>
+          </div>
         </div>
       </div>
     </Section>

@@ -7,8 +7,8 @@
   border-radius: var(--border-radius-xl);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .section {
     margin-bottom: var(--spacing-xl);
   }
-}
+} */

@@ -1,5 +1,6 @@
 import styles from "./caroselScrollInfinit.module.css";
 import Section from "../Section";
+import Title from "../Title";
 
 interface CarouselScrollInfinitProps {
   listSlides: any[];
@@ -8,6 +9,7 @@ interface CarouselScrollInfinitProps {
 const CarouselScrollInfinit = ({ listSlides }: CarouselScrollInfinitProps) => {
   return (
     <Section>
+      <Title>Parcerias</Title>
       <div className={styles.carousel}>
         <div className={styles.group}>
           {listSlides.map((item, index) => (

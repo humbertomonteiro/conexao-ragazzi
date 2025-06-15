@@ -28,7 +28,7 @@ export default function AboutUs() {
             veniam, tenetur, earum similique explicabo voluptas illum minima
             voluptates corporis cumque eveniet!.
           </p>
-          <ButtonPrimary data-button-color="secondary">
+          <ButtonPrimary data-button-color="primary">
             Comprar agora
           </ButtonPrimary>
         </div>

@@ -24,6 +24,13 @@
   line-height: var(--line-height-base);
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .container {
     padding-top: var(--spacing-lg);
@@ -35,5 +42,9 @@
 
   .text h1 {
     font-size: var(--font-size-xl);
+  }
+
+  .buttons {
+    flex-direction: column;
   }
 }

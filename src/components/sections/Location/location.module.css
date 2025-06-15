@@ -34,4 +34,8 @@
   .container {
     flex-direction: column;
   }
+
+  .map {
+    height: 300px;
+  }
 }
