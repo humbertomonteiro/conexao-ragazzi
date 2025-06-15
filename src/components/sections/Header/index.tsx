@@ -6,7 +6,7 @@ import { MdOutlinePix } from "react-icons/md";
 
 const Header = () => {
   return (
-    <Section>
+    <Section sectionSecondary={true}>
       <div className={styles.container} data-container="flex-col">
         <div className={styles.logo}>
           {/* <img src={logo} alt="logo" /> */}

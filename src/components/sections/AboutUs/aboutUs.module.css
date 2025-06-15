@@ -1,7 +1,6 @@
 .container {
   display: flex;
   gap: var(--spacing-md);
-  padding: var(--spacing-md);
 }
 
 .text {

@@ -21,7 +21,7 @@
   --success-color: #28a745;
   --warning-color: #ffc107;
   --border-color: #a55259;
-  --border-color-2: #3a3a3a;
+  --border-color-2: #c0c0c050;
   --text-light: #f8f9fa; /* Cor para textos em fundos escuros */
   --text-light-2: #e9e9e9; /* Cor para textos em fundos escuros */
   --text-dark: #212529;
@@ -113,18 +113,21 @@ a:hover {
   background: var(--primary-color-transparent);
   border-radius: var(--border-radius-xl);
   border: 1px solid var(--border-color);
+  padding: var(--spacing-lg) var(--spacing-md);
 }
 
 [data-background="transparent-secondary"] {
   background: var(--secondary-color-transparent);
   border-radius: var(--border-radius-xl);
   border: 1px solid var(--border-color);
+  padding: var(--spacing-lg) var(--spacing-md);
 }
 
 [data-background="transparent-tertiary"] {
   background: var(--tertiary-color-transparent);
   border-radius: var(--border-radius-xl);
   border: 1px solid var(--border-color);
+  padding: var(--spacing-lg) var(--spacing-md);
 }
 
 /* background animation and image */

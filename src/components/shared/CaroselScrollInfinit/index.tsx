@@ -1,6 +1,7 @@
 import styles from "./caroselScrollInfinit.module.css";
 import Section from "../Section";
 import Title from "../Title";
+import ButtonPrimary from "../ButtonPrimary";
 
 interface CarouselScrollInfinitProps {
   listSlides: any[];
@@ -34,6 +35,9 @@ const CarouselScrollInfinit = ({ listSlides }: CarouselScrollInfinitProps) => {
             </div>
           ))}
         </div>
+      </div>
+      <div className={styles.button}>
+        <ButtonPrimary>Ver todos</ButtonPrimary>
       </div>
     </Section>
   );

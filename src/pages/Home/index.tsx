@@ -70,9 +70,9 @@ const Home = () => {
     <div>
       <TopBar />
       <Header />
-      <Benefits />
       <AboutUs />
       <Testimonials />
+      <Benefits />
       <Location />
       <CarouselScrollInfinit listSlides={listSlides} />
       <Questions />

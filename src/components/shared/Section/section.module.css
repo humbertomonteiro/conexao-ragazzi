@@ -1,16 +1,17 @@
 .section {
   width: var(--container-max-width);
   max-width: var(--container-max-width-percentege);
-  margin: var(--spacing-xl) auto;
+  margin: 0 auto;
   margin-bottom: 6rem;
   border-radius: var(--border-radius-xl);
 }
 
 .sectionSecondary {
-  background: var(--primary-color-transparent);
-  border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-  padding: var(--spacing-xl) var(--spacing-md);
+  /* background: var(--primary-color-transparent); */
+  backdrop-filter: blur(5px);
+  border-top: 1px solid var(--border-color-2);
+  border-bottom: 1px solid var(--border-color-2);
+  padding: var(--spacing-md) 0;
   margin-bottom: 6rem;
 }
 

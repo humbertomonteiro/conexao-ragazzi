@@ -1,5 +1,29 @@
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+.box {
+  padding: var(--spacing-lg) var(--spacing-md);
+  text-align: center;
+  border-radius: var(--border-radius-xl);
+  border: 1px solid var(--border-color);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.box p {
+  font-size: var(--font-size-sm);
+}
+
+.icon {
+  font-size: var(--font-size-xxl);
+}
+ */
 .button {
+  grid-column: span 2;
   display: flex;
-  justify-content: center;
   margin-top: var(--spacing-md);
+  justify-content: center;
 }
