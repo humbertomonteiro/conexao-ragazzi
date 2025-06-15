@@ -1,6 +1,7 @@
 .testimony {
+  /*  */
   background-color: var(--background-color-light);
-  padding: var(--spacing-md);
+  padding: var(--spacing-lg) var(--spacing-md);
   margin: var(--spacing-md) 0;
   border-radius: var(--border-radius-lg);
   width: 350px;

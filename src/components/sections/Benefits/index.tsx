@@ -4,6 +4,7 @@ import Title from "../../shared/Title";
 import styles from "./benefits.module.css";
 import Benefit from "../../templates/Benefit";
 import { FaCheck } from "react-icons/fa";
+import ButtonPrimary from "../../shared/ButtonPrimary";
 
 const listBenefits = [
   {
@@ -54,10 +55,13 @@ const listBenefits = [
 
 export default function Benefits() {
   return (
-    <Section>
+    <Section sectionSecondary={true}>
       <Title>Benefícios</Title>
       <div className={styles.container}>
         <CaroselCoverFlow listSlides={listBenefits} />
+      </div>
+      <div className={styles.button}>
+        <ButtonPrimary>Comprar agora</ButtonPrimary>
       </div>
     </Section>
   );

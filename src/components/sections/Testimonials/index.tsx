@@ -54,7 +54,7 @@ const listSlides = [
 
 export default function Testimonials() {
   return (
-    <Section>
+    <Section sectionSecondary={true}>
       <Title>Depoimentos</Title>
       <div className={styles.container}>
         <CarouselSimple listSlides={listSlides} />

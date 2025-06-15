@@ -3,6 +3,7 @@
   border-radius: var(--border-radius-xl);
   border: 1px solid var(--border-color);
   padding: var(--spacing-lg) var(--spacing-md);
+  margin: var(--spacing-md) 0;
   display: flex;
   flex-direction: column;
   align-items: center;

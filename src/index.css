@@ -10,7 +10,7 @@
   /* Cores Principais */
   --primary-color: #b71515; /* Cor principal, ex.: azul para botões e destaques */
   --secondary-color: #212529; /* Cor secundária, ex.: cinza para textos secundários */
-  --primary-color-transparent: linear-gradient(to right, #200122b9);
+  --primary-color-transparent: linear-gradient(to right, #2001227c);
   --secondary-color-transparent: linear-gradient(
     to right,
     #6f0000c0,

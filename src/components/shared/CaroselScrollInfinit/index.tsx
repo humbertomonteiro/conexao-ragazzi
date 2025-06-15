@@ -8,7 +8,7 @@ interface CarouselScrollInfinitProps {
 
 const CarouselScrollInfinit = ({ listSlides }: CarouselScrollInfinitProps) => {
   return (
-    <Section>
+    <Section sectionSecondary={true}>
       <Title>Parcerias</Title>
       <div className={styles.carousel}>
         <div className={styles.group}>

@@ -1,10 +1,17 @@
 .section {
   width: var(--container-max-width);
   max-width: var(--container-max-width-percentege);
-  background-color: var(--color-bg);
   margin: var(--spacing-xl) auto;
   margin-bottom: 6rem;
   border-radius: var(--border-radius-xl);
+}
+
+.sectionSecondary {
+  background: var(--primary-color-transparent);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--spacing-xl) var(--spacing-md);
+  margin-bottom: 6rem;
 }
 
 /* @media (max-width: 768px) {
