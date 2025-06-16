@@ -42,7 +42,7 @@ const Footer = () => {
         <span>
           Desenvolvido por{" "}
           <a
-            href="https://www.linkedin.com/in/lucas-santos-dev/"
+            href="https://portfolio-three-bay-73.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
