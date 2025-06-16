@@ -20,6 +20,7 @@
 
 .content {
   margin-top: var(--spacing-md);
+  text-align: center;
 }
 
 /* @media (max-width: 1008px) {

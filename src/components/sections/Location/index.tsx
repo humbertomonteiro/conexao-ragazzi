@@ -92,7 +92,7 @@ const Location = () => {
         </div>
         <div className={styles.map}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7962.749176864492!2d-38.525312!3d-3.728249!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74852e23fffff%3A0x6d955ecb47c0a48b!2sR%20Pedro%20Borges%2C%2020%20-%20Sala%20T%202C%20-%20Centro%2C%20Fortaleza%20-%20CE%2C%2060055-110!5e0!3m2!1spt-BR!2sbr!4v1749844046759!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15925.290693380288!2d-38.453857!3d-3.7396968!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7464d784ca471%3A0x2401a6bfcd1dc08d!2sGran%20Mareiro%20Hotel!5e0!3m2!1sen!2sbr!4v1750105958803!5m2!1sen!2sbr"
             loading="lazy"
           ></iframe>
         </div>

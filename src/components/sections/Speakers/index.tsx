@@ -15,61 +15,61 @@ import yasminMelo from "../../../assets/images/speakers/yasmin-melo.jpeg";
 
 const speakers = [
   {
-    name: "Daniel Ragazzi",
+    name: "Daniel Ragazzi - CE ",
     content: (
       <Speaker
-        name="Daniel Ragazzi"
+        name="Daniel Ragazzi - CE"
         image={danielRagazzi}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        description="CEO Ragazzi Promotora"
       />
     ),
   },
   {
-    name: "Fabiano Rebello",
+    name: "Fabiano Rebello - SP",
     content: (
       <Speaker
-        name="Fabiano Rebello"
+        name="Fabiano Rebello - SP"
         image={fabianoRebello}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        description="CEO CND"
       />
     ),
   },
 
   {
-    name: "Juliana Borger",
+    name: "Juliana Borger -BA",
     content: (
       <Speaker
-        name="Juliana Borges"
+        name="Juliana Borges - BA"
         image={julianaBorges}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        description="Superintendente da Qualibanking"
       />
     ),
   },
   {
-    name: "Roger Chagas",
+    name: "Roger Chagas - SP",
     content: (
       <Speaker
-        name="Roger Chagas"
+        name="Roger Chagas - SP"
         image={rogerChagas}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        description="CEO New Corban"
       />
     ),
   },
   {
-    name: "Taise Pimenta",
+    name: "Taise Pimenta - RJ",
     content: (
       <Speaker
-        name="Taise Pimenta"
+        name="Taise Pimenta - RJ"
         image={taisePimenta}
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       />
     ),
   },
   {
-    name: "Yasmin Melo",
+    name: "Yasmin Melo - SP",
     content: (
       <Speaker
-        name="Yasmin Melo"
+        name="Yasmin Melo - SP"
         image={yasminMelo}
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       />
@@ -80,7 +80,7 @@ const speakers = [
 export default function Speakers() {
   return (
     <Section>
-      <Title>Palestrantes</Title>
+      <Title>Convidados</Title>
       <div className={styles.container} data-aos="zoom-in">
         <CaroselSimple listSlides={speakers} slidesPerViewPropsMobile={1} />
       </div>

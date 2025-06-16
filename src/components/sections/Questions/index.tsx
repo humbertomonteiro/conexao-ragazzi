@@ -9,34 +9,37 @@ import { useState } from "react";
 
 const questions = [
   {
-    question: "Como faço para agendar uma consulta?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing safdsaha ah a gdsfag sdf.",
+    question: "Como faço para adquirir o ingresso com 40% de desconto? ",
+    answer: `É necessário ser parceiro da RAGAZZI PROMOTORA, caso não seja, 
+    entre em contato e faça seu cadastro. Além disso, também é necessário 
+    ter uma digitação aprovada durante o mês de junho/2025 na fintech QUALIBANKING. 
+    Após esses dois pré requisitos, basta solicitar através de algum gerente 
+    comercial da RAGAZZI, o seu cupom de desconto. `,
   },
   {
-    question: "Como faço para agendar uma consulta?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+    question: "O que está incluso no meu ingresso?",
+    answer: `Seu ingresso da direito a um pequeno coffe break no início do evento, 
+      um kit de boas vindas, sorteio de brindes e também a assistir todas 
+      as palestras durante o dia.`,
   },
   {
-    question: "Como faço para agendar uma consulta?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+    question: "Quais as formas de pagamento da inscrição?",
+    answer: `Na plataforma SYMPLA, seu ingresso pode ser pago via pix ou no cartão 
+      de crédito parcelado em até 12x.
+`,
   },
   {
-    question: "Como faço para agendar uma consulta?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+    question:
+      "No horário de almoço, existe local próximo para fazer essa refeição?",
+    answer: `Lembrando que o almoço NÃO está incluso no valor no ingresso, porém, no 
+      próprio hotel existe um bom restaurante, além de diversas barracas de praia 
+      localizadas próximas ao hotel.`,
   },
   {
-    question: "Como faço para agendar uma consulta?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-  },
-  {
-    question: "Como faço para agendar uma consulta?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+    question:
+      "Sou dono (a) de um escritório de crédito consignado, posso levar minha equipe?",
+    answer: `Sim, nesse evento iremos abordar vários temas relacionados ao 
+     setor e NÃO falaremos sobre percentuais de comissões.`,
   },
 ];
 
