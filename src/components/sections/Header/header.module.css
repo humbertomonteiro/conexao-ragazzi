@@ -1,11 +1,11 @@
 .container {
   min-height: 100vh;
+  padding-top: 60px;
 }
 
 .logo {
   width: 300px;
   max-width: 100%;
-  margin-top: var(--spacing-md);
 }
 
 .text {
