@@ -24,12 +24,12 @@ export default function CaroselCoverFlow({
 
   useEffect(() => {
     window.addEventListener("resize", () => {
-      setSlidesPerView(window.innerWidth > 768 ? slidesPerViewProps || 3 : 1.5);
+      setSlidesPerView(window.innerWidth > 768 ? slidesPerViewProps || 3 : 1);
     });
   }, [listSlides]);
 
   return (
-    <>
+    <div className={styles.container}>
       <Swiper
         effect={"coverflow"}
         spaceBetween={30}
@@ -58,6 +58,6 @@ export default function CaroselCoverFlow({
           <SwiperSlide key={slide.id}>{slide.content}</SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 }

@@ -80,11 +80,7 @@ export default function Speakers() {
   return (
     <Section>
       <Title>Palestrantes</Title>
-      <div
-        className={styles.container}
-        data-background="transparent-primary"
-        data-aos="zoom-in"
-      >
+      <div className={styles.container} data-aos="zoom-in">
         <CaroselSimple listSlides={speakers} slidesPerViewPropsMobile={1} />
       </div>
     </Section>
