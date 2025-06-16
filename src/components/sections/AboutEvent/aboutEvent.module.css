@@ -69,8 +69,8 @@
   width: 100%;
   background: linear-gradient(
     to right,
-    #410527 0%,
-    rgba(74, 6, 34, 0.8) 30%,
+    #3c0325 0%,
+    #410523da 30%,
     rgba(74, 6, 34, 0.3) 60%,
     rgba(74, 6, 34, 0) 100%
   );

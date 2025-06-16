@@ -135,7 +135,7 @@ a:hover {
 
 /* background animation and image */
 .area {
-  background-image: linear-gradient(135deg, rgba(223, 27, 27, 0.3), #9b0b0b96),
+  background-image: linear-gradient(to bottom, #b715153f, #9b0b0b96),
     url("https://img.freepik.com/free-vector/gradient-purple-color-background-modern-wave-abstract-designs_343694-2361.jpg?ga=GA1.1.2095538369.1681160396&semt=ais_hybrid&w=740");
   background-size: cover;
   background-position: center;

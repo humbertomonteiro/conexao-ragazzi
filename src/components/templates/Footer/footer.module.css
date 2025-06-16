@@ -13,14 +13,25 @@
   border-bottom: 1px solid var(--border-color);
 }
 
-.links {
+.social {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
 }
 
-.links a:hover {
-  font-weight: var(--font-weight-bold);
+.socialList {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+  list-style: none;
+}
+
+.socialList li a {
+  font-size: var(--font-size-xl);
+}
+
+.socialList li a:hover {
+  color: var(--text-light);
 }
 
 .logo {
