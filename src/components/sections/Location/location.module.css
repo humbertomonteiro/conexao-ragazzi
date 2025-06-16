@@ -31,13 +31,12 @@
   margin-bottom: var(--spacing-sm);
 }
 
-.text a {
+.text .link {
   color: var(--warning-color);
   transition: var(--transition-normal);
 }
 
-.text a:hover {
-  color: var(--warning-color-hover);
+.text .link:hover {
   text-decoration: underline;
 }
 
@@ -52,7 +51,7 @@
 
 .map {
   flex: 1 1 50%;
-  height: 400px;
+  height: 450px;
 }
 
 .map iframe {

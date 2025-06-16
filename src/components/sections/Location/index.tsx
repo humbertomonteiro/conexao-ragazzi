@@ -25,7 +25,8 @@ const Location = () => {
             <li>
               <strong>Endereço</strong>:{" "}
               <a
-                href="https://www.google.com/maps/place/R.+Oswaldo+Araújo,+100+-+Praia+do+Futuro,+Fortaleza+-+CE,+60055-110/@-3.728249,-38.525312,17z/data=!3m1!4b1!4m6!3m5!1s0x7c74852e23fffff:0x6d955ecb47c0a48b!8m2!3d-3.728249!4d-38.525312!16s%2Fg%2F11c484x1kg?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D"
+                className={styles.link}
+                href="https://www.google.com/maps/place/Gran+Mareiro+Hotel/@-3.7396968,-38.453857,15z/data=!4m9!3m8!1s0x7c7464d784ca471:0x2401a6bfcd1dc08d!5m2!4m1!1i2!8m2!3d-3.7396968!4d-38.453857!16s%2Fg%2F11cs2x64rn?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
               >
                 Rua Oswaldo Araújo, 100 – Praia do Futuro – Fortaleza – CE.
@@ -67,7 +68,13 @@ const Location = () => {
             </li>
           </ul>
 
-          <ButtonPrimary data-button-width="full">Comprar agora</ButtonPrimary>
+          <ButtonPrimary
+            data-button-width="full"
+            link="https://www.sympla.com.br/evento/conexao-ragazzi/2999636"
+            target={true}
+          >
+            Comprar agora
+          </ButtonPrimary>
         </div>
         <div className={styles.map}>
           <iframe

@@ -37,7 +37,12 @@ const CarouselScrollInfinit = ({ listSlides }: CarouselScrollInfinitProps) => {
         </div>
       </div>
       <div className={styles.button}>
-        <ButtonPrimary>Ver todos</ButtonPrimary>
+        <ButtonPrimary
+          link="https://www.sympla.com.br/evento/conexao-ragazzi/2999636"
+          target={true}
+        >
+          Comprar agora
+        </ButtonPrimary>
       </div>
     </Section>
   );

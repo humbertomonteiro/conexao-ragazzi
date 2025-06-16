@@ -2,7 +2,7 @@ import styles from "./aboutEvent.module.css";
 import Section from "../../shared/Section";
 import Title from "../../shared/Title";
 import ButtonPrimary from "../../shared/ButtonPrimary";
-import { FaWhatsapp } from "react-icons/fa";
+// import { FaWhatsapp } from "react-icons/fa";
 
 export default function AboutEvent() {
   return (
@@ -62,8 +62,12 @@ export default function AboutEvent() {
           </div>
         </div>
         <div className={styles.button}>
-          <ButtonPrimary data-button-color="primary" icon={<FaWhatsapp />}>
-            Participar do evento
+          <ButtonPrimary
+            data-button-color="primary"
+            link="https://www.sympla.com.br/evento/conexao-ragazzi/2999636"
+            target={true}
+          >
+            comprar agora
           </ButtonPrimary>
         </div>
       </div>

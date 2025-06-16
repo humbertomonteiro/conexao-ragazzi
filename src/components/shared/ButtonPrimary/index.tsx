@@ -6,6 +6,7 @@ interface ButtonPrimaryProps {
   link?: string;
   icon?: React.ReactNode;
   onClick?: () => void;
+  target?: boolean;
 }
 
 const ButtonPrimary = ({
@@ -13,12 +14,18 @@ const ButtonPrimary = ({
   onClick,
   link,
   icon,
+  target,
   ...args
 }: ButtonPrimaryProps) => {
   return (
     <>
       {link ? (
-        <a href={link} {...args} className={styles.buttonPrimary}>
+        <a
+          href={link}
+          target={target ? "_blank" : "_self"}
+          {...args}
+          className={styles.buttonPrimary}
+        >
           {children}{" "}
           <div className={styles.icon}>
             {icon ? icon : <IoMdArrowForward />}

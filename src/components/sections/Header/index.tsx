@@ -2,7 +2,7 @@ import styles from "./header.module.css";
 import ButtonPrimary from "../../shared/ButtonPrimary";
 import Section from "../../shared/Section";
 
-import { MdOutlinePix } from "react-icons/md";
+// import { MdOutlinePix } from "react-icons/md";
 
 import logo from "../../../assets/images/logos/conexao.png";
 
@@ -27,10 +27,15 @@ const Header = () => {
           </p>
           {/* <strong>12 de Julho das 8:30h às 16:30h</strong> */}
           <div className={styles.buttons}>
-            <ButtonPrimary icon={<MdOutlinePix />}>Comprar pix</ButtonPrimary>
-            <ButtonPrimary data-button-color="secondary">
+            <ButtonPrimary
+              link="https://www.sympla.com.br/evento/conexao-ragazzi/2999636"
+              target={true}
+            >
               Comprar agora
             </ButtonPrimary>
+            {/* <ButtonPrimary data-button-color="secondary">
+              Comprar agora
+            </ButtonPrimary> */}
           </div>
         </div>
       </div>

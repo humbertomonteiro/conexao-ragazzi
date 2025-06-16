@@ -94,7 +94,12 @@ export default function Benefits() {
         <CaroselCoverFlow listSlides={listBenefits} />
       </div>
       <div className={styles.button}>
-        <ButtonPrimary>Comprar agora</ButtonPrimary>
+        <ButtonPrimary
+          link="https://www.sympla.com.br/evento/conexao-ragazzi/2999636"
+          target={true}
+        >
+          Comprar agora
+        </ButtonPrimary>
       </div>
     </Section>
   );
