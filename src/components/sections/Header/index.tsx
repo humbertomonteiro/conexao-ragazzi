@@ -8,7 +8,7 @@ import logo from "../../../assets/images/logos/conexao.png";
 
 const Header = () => {
   return (
-    <Section sectionSecondary={true}>
+    <Section>
       <div
         className={styles.container}
         data-container="flex-col"

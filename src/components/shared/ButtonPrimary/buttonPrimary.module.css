@@ -10,9 +10,9 @@
   background-size: 200% auto;
   background-image: linear-gradient(
     45deg,
-    #b22222 0%,
-    #ff4500 51%,
-    #ff7f50 100%
+    #970101 0%,
+    #e40303 51%,
+    #970101 100%
   );
   /* background-image: linear-gradient(
     45deg,
@@ -44,9 +44,9 @@
 [data-button-color="secondary"] {
   background-image: linear-gradient(
     45deg,
-    #200122 0%,
-    #67056e 51%,
-    #d10edf 100%
+    #570072 0%,
+    #b200e9 51%,
+    #8e00b9 100%
   );
 }
 

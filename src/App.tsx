@@ -24,6 +24,8 @@ function App() {
       <BrowserRouter>
         <RoutesApp />
       </BrowserRouter>
+      <div className="glow glow-bottom-left"></div>
+      <div className="glow glow-top-right"></div>
       <div className="area">
         <ul className="circles">
           <li></li>

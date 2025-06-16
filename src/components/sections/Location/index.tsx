@@ -3,6 +3,8 @@ import Section from "../../shared/Section";
 import Title from "../../shared/Title";
 import ButtonPrimary from "../../shared/ButtonPrimary";
 
+import { FaCheck } from "react-icons/fa";
+
 const Location = () => {
   return (
     <Section>
@@ -42,25 +44,37 @@ const Location = () => {
           <h3>Por que escolhemos este local?</h3>
           <ul className={styles.list} data-list-benefits="true">
             <li>
-              <div className={styles.icon}>✔️</div> Fácil acesso
+              <div className={styles.icon}>
+                <FaCheck />
+              </div>
+              Fácil acesso
               {/* : O hotel fica em uma das
               principais áreas de Fortaleza, com acesso rápido a táxis,
               aplicativos de transporte e transporte público. */}
             </li>
             <li>
-              <div className={styles.icon}>✔️</div> Ambiente confortável
+              <div className={styles.icon}>
+                <FaCheck />
+              </div>
+              Ambiente confortável
               {/* : Salas amplas,
               climatizadas e com estrutura moderna, garantindo conforto durante
               todo o evento. */}
             </li>
             <li>
-              <div className={styles.icon}>✔️</div> Infraestrutura de primeira
+              <div className={styles.icon}>
+                <FaCheck />
+              </div>
+              Infraestrutura de primeira
               {/* : Internet de alta
               velocidade, equipamentos de áudio e vídeo de qualidade e todo o
               suporte necessário para uma excelente experiência de aprendizado. */}
             </li>
             <li>
-              <div className={styles.icon}>✔️</div> Localização privilegiada
+              <div className={styles.icon}>
+                <FaCheck />
+              </div>
+              Localização privilegiada
               {/* : Fica a poucos metros
               da orla da Praia do Futuro, uma das praias mais famosas e
               visitadas de Fortaleza. Perfeito para quem quiser aproveitar um

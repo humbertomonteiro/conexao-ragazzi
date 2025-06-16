@@ -1,6 +1,8 @@
 .footer {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 
 .container {
@@ -40,7 +42,6 @@
 
 .logo > p {
   font-size: var(--font-size-sm);
-  color: var(--text-light);
   text-align: center;
 }
 
