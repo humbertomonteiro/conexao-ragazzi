@@ -3,7 +3,7 @@ import styles from "./topBar.module.css";
 
 const TopBar = () => {
   return (
-    <div className={styles.topBar}>
+    <div className={styles.topBar} data-aos="fade-down" data-aos-delay="200">
       <p>Não perca essa oportunidade!</p>
       <ButtonPrimary
         data-button-color="primary"

@@ -25,6 +25,7 @@ const ButtonPrimary = ({
           target={target ? "_blank" : "_self"}
           {...args}
           className={styles.buttonPrimary}
+          data-aos="zoom-in"
         >
           {children}{" "}
           <div className={styles.icon}>

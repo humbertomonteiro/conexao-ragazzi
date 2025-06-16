@@ -43,7 +43,7 @@ const Location = () => {
           </ul>
           <h3>Por que escolhemos este local?</h3>
           <ul className={styles.list} data-list-benefits="true">
-            <li>
+            <li data-aos="fade-up">
               <div className={styles.icon}>
                 <FaCheck />
               </div>
@@ -52,7 +52,7 @@ const Location = () => {
               principais áreas de Fortaleza, com acesso rápido a táxis,
               aplicativos de transporte e transporte público. */}
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="100">
               <div className={styles.icon}>
                 <FaCheck />
               </div>
@@ -61,7 +61,7 @@ const Location = () => {
               climatizadas e com estrutura moderna, garantindo conforto durante
               todo o evento. */}
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="200">
               <div className={styles.icon}>
                 <FaCheck />
               </div>
@@ -70,7 +70,7 @@ const Location = () => {
               velocidade, equipamentos de áudio e vídeo de qualidade e todo o
               suporte necessário para uma excelente experiência de aprendizado. */}
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="300">
               <div className={styles.icon}>
                 <FaCheck />
               </div>

@@ -58,17 +58,27 @@ export default function Questions() {
         data-background="transparent-primary"
         data-aos="zoom-in"
       >
-        <div className={styles.whatsapp} data-background="transparent-tertiary">
+        <div
+          className={styles.whatsapp}
+          data-background="transparent-tertiary"
+          data-aos="zoom-in"
+        >
           <FaWhatsapp />
           <h2>Prefere falar conosco?</h2>
           <p>Nos envie uma mensagem no WhatsApp</p>
-          <ButtonPrimary data-button-color="secondary" icon={<FaWhatsapp />}>
+          <ButtonPrimary
+            data-button-color="secondary"
+            icon={<FaWhatsapp />}
+            link="https://wa.me/558582218050?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20o%20Conex%C3%A3o%20Ragazzi."
+            target={true}
+          >
             Falar com o time
           </ButtonPrimary>
         </div>
         <div
           className={styles.questions}
           data-background="transparent-tertiary"
+          data-aos="zoom-in"
         >
           {questions.map((question, index) => (
             <div

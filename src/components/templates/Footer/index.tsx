@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.container} data-aos="fade-in">
-        <div className={styles.logo}>
+        <div className={styles.logo} data-aos="fade-up">
           {/* <img src={logo} alt="logo" /> */}
           <img src={logo} alt="logo" />
           <p>Impulsionar seus resultados.</p>
@@ -19,17 +19,17 @@ const Footer = () => {
         <div className={styles.social}>
           <h3>Redes Sociais</h3>
           <ul className={styles.socialList}>
-            <li>
+            <li data-aos="fade-up">
               <a href="#">
                 <FaInstagram />
               </a>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="100">
               <a href="#">
                 <FaFacebook />
               </a>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="200">
               <a href="#">
                 <AiOutlineTikTok />
               </a>

@@ -68,7 +68,7 @@ const listBenefits = [
     content: (
       <Benefit
         icon={<AiOutlineOpenAI />}
-        title="Inteligência Artificial ao Seu Favor"
+        title="Inteligência Artificial a Seu Favor"
         description="Entenda de forma prática como usar a IA para potencializar suas vendas, melhorar sua gestão de leads e criar campanhas mais assertivas."
       />
     ),

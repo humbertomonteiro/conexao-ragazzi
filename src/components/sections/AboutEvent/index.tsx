@@ -17,40 +17,40 @@ export default function AboutEvent() {
 
         <div className={styles.listContainer}>
           <ul className={styles.list}>
-            <li className={styles.itemLeft}>
+            <li data-aos="fade-up">
               <p>Mapa de oportunidades com governos e prefeituras;</p>
             </li>
-            <li className={styles.itemRight}>
+            <li data-aos="fade-up">
               <p>⁠Estratégias de vendas no siape;</p>
             </li>
-            <li className={styles.itemLeft}>
+            <li data-aos="fade-up">
               <p>
                 Qual a ferramenta mais indicada em seu negócio: Discadora, URA
                 reversa, disparos e tráfego pago;
               </p>
             </li>
-            <li className={styles.itemRight}>
+            <li data-aos="fade-up">
               <p>
                 Inteligência artificial, como utilizar essa importante
                 ferramenta em nosso mercado;
               </p>
             </li>
-            <li className={styles.itemLeft}>
+            <li data-aos="fade-up">
               <p>Aprenda sobre bases, mailings e higienizações;</p>
             </li>
-            <li className={styles.itemRight}>
+            <li data-aos="fade-up">
               <p>
                 New Corban: faça a gestão dos seus contratos em um único
                 sistema;
               </p>
             </li>
-            <li className={styles.itemLeft}>
+            <li data-aos="fade-up">
               <p>Qualibanking, a fintech com inúmeras vantagens;</p>
             </li>
-            <li className={styles.itemRight}>
+            <li data-aos="fade-up">
               <p>⁠Marketing para o seu negócio;</p>
             </li>
-            <li className={styles.itemLeft}>
+            <li data-aos="fade-up">
               <p>A importância do equilíbrio emocional em nosso trabalho.</p>
             </li>
           </ul>

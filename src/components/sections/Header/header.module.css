@@ -1,29 +1,32 @@
 .container {
-  min-height: 95vh;
+  min-height: 100vh;
   padding: 0 var(--spacing-md);
 }
 
 .logo {
   width: 300px;
   max-width: 100%;
-  margin-top: var(--spacing-lg);
+  margin-top: var(--spacing-md);
 }
 
 .text {
   width: 800px;
   max-width: 100%;
-  text-align: center;
 }
 
-.text h1 {
+.textContent h1 {
   font-size: var(--font-size-xl);
   line-height: var(--line-height-heading);
   font-family: var(--font-secondary);
   width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: var(--spacing-sm);
 }
 
 .text p {
   color: var(--text-light-2);
+  text-align: center;
   line-height: var(--line-height-base);
 }
 
