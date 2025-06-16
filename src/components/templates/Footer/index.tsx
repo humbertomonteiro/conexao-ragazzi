@@ -1,22 +1,23 @@
 import styles from "./footer.module.css";
 
+import logo from "../../../assets/images/logos/conexao.png";
+
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <div className={styles.container}>
+      <div className={styles.container} data-aos="fade-out">
         <div className={styles.logo}>
           {/* <img src={logo} alt="logo" /> */}
-          <img
-            src="https://ragazzipromotora.com.br/wp-content/uploads/2023/11/rgz_logo.png"
-            alt="logo"
-          />
-          <span>Especialista em consignado há 15 anos.</span>
+          <img src={logo} alt="logo" />
+          <p>Impulsionar seus resultados.</p>
+          {/* <span>Especialista em consignado há 15 anos.</span> */}
         </div>
         <div className={styles.links}>
-          <a href="#">Sobre</a>
-          <a href="#">Contato</a>
-          <a href="#">Termos de uso</a>
-          <a href="#">Política de privacidade</a>
+          <h3>Redes Sociais</h3>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Linkedin</a>
+          <a href="#">Youtube</a>
         </div>
       </div>
       <div className={styles.copyright}>

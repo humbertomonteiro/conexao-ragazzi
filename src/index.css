@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -17,13 +18,14 @@
     #200122b9
   );
   --tertiary-color-transparent: linear-gradient(to right, #200122b9, #6f0000c0);
+  --quaternary-color-transparent: #212529e1;
   --background-color-light: #f8f9fa;
   --success-color: #28a745;
   --warning-color: #ffc107;
   --border-color: #a55259;
   --border-color-2: #c0c0c050;
-  --text-light: #f8f9fa; /* Cor para textos em fundos escuros */
-  --text-light-2: #e9e9e9; /* Cor para textos em fundos escuros */
+  --text-light: #fff5f0; /* Cor para textos em fundos escuros */
+  --text-light-2: #e0b7b7; /* Cor para textos em fundos escuros */
   --text-dark: #212529;
 
   /* Tipografia */
@@ -34,6 +36,7 @@
   --font-size-xxs: 0.675rem; /* 11px - para textos menores */
   --font-size-sm: 0.875rem; /* 14px - para textos menores */
   --font-size-lg: 1.25rem; /* 20px - para subtítulos */
+  --font-size-lg-2: 1.7rem; /* 24px - para subtítulos */
   --font-size-xl: 2rem; /* 32px - para títulos grandes */
   --font-size-xxl: 3rem; /* 48px - para títulos grandes */
   --font-weight-regular: 400; /* Peso regular */
@@ -132,12 +135,12 @@ a:hover {
 
 /* background animation and image */
 .area {
-  background-image: linear-gradient(to top, #b71515a1, #9b0b0b96),
+  background-image: linear-gradient(135deg, rgba(223, 27, 27, 0.3), #9b0b0b96),
     url("https://img.freepik.com/free-vector/gradient-purple-color-background-modern-wave-abstract-designs_343694-2361.jpg?ga=GA1.1.2095538369.1681160396&semt=ais_hybrid&w=740");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #b715153b;
+  background-color: #b715153f;
   position: fixed;
   top: 0;
   bottom: 0;

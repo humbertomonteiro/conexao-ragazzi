@@ -4,25 +4,28 @@ import Section from "../../shared/Section";
 
 import { MdOutlinePix } from "react-icons/md";
 
+import logo from "../../../assets/images/logos/conexao.png";
+
 const Header = () => {
   return (
     <Section sectionSecondary={true}>
-      <div className={styles.container} data-container="flex-col">
+      <div
+        className={styles.container}
+        data-container="flex-col"
+        data-aos="fade-in"
+      >
         <div className={styles.logo}>
-          {/* <img src={logo} alt="logo" /> */}
-          <img
-            src="https://ragazzipromotora.com.br/wp-content/uploads/2023/11/rgz_logo.png"
-            alt="logo"
-          />
+          <img src={logo} alt="logo" />
         </div>
         <div className={styles.text} data-container="flex-col">
-          <h1>Venha conhecer o melhor</h1>
+          <h1>Prepare-se para uma imersão de conhecimento e transformação.</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Quisquam, quos. Lorem ipsum dolor sit amet
+            Se você atua no mercado de crédito consignado ou serviços
+            financeiros, este evento foi pensado para você. Uma oportunidade
+            única de se atualizar, entender as novas tendências e impulsionar
+            seus resultados.
           </p>
+          {/* <strong>12 de Julho das 8:30h às 16:30h</strong> */}
           <div className={styles.buttons}>
             <ButtonPrimary icon={<MdOutlinePix />}>Comprar pix</ButtonPrimary>
             <ButtonPrimary data-button-color="secondary">

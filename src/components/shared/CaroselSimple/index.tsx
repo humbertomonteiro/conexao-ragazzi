@@ -8,18 +8,24 @@ import styles from "./caroselSimple.module.css";
 
 interface CaroselSimpleProps {
   slidesPerViewProps?: number;
+  slidesPerViewPropsMobile?: number;
   listSlides: any[];
 }
 
 export default function CaroselSimple({
   slidesPerViewProps,
   listSlides,
+  slidesPerViewPropsMobile,
 }: CaroselSimpleProps) {
   const [slidesPerView, setSlidesPerView] = useState(3);
 
   useEffect(() => {
     window.addEventListener("resize", () => {
-      setSlidesPerView(window.innerWidth > 768 ? slidesPerViewProps || 3 : 1.5);
+      setSlidesPerView(
+        window.innerWidth > 768
+          ? slidesPerViewProps || 3
+          : slidesPerViewPropsMobile || 1.5
+      );
     });
   }, [listSlides]);
 

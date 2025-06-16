@@ -22,4 +22,22 @@
   align-items: center;
   justify-content: center;
   gap: var(--spacing-sm);
+  text-align: center;
+}
+
+.content h3 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-secondary);
+}
+
+.content p {
+  font-size: var(--font-size-sm);
+  color: var(--text-light-2);
+}
+
+@media (max-width: 768px) {
+  .content h3 {
+    font-size: var(--font-size-lg);
+  }
 }

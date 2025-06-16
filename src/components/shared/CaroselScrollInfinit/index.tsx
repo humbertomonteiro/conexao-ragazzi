@@ -10,8 +10,8 @@ interface CarouselScrollInfinitProps {
 const CarouselScrollInfinit = ({ listSlides }: CarouselScrollInfinitProps) => {
   return (
     <Section sectionSecondary={true}>
-      <Title>Parcerias</Title>
-      <div className={styles.carousel}>
+      <Title>Patrocinadores</Title>
+      <div className={styles.carousel} data-aos="zoom-in">
         <div className={styles.group}>
           {listSlides.map((item, index) => (
             <div key={index} className={styles.card}>

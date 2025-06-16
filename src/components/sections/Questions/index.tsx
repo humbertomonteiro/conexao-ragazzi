@@ -50,12 +50,16 @@ export default function Questions() {
   return (
     <Section>
       <Title>Perguntas Frequentes</Title>
-      <div className={styles.container} data-background="transparent-primary">
+      <div
+        className={styles.container}
+        data-background="transparent-primary"
+        data-aos="zoom-in"
+      >
         <div className={styles.whatsapp} data-background="transparent-tertiary">
           <FaWhatsapp />
           <h2>Prefere falar conosco?</h2>
           <p>Nos envie uma mensagem no WhatsApp</p>
-          <ButtonPrimary data-button-color="primary" icon={<FaWhatsapp />}>
+          <ButtonPrimary data-button-color="secondary" icon={<FaWhatsapp />}>
             Falar com o time
           </ButtonPrimary>
         </div>

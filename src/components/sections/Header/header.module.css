@@ -3,9 +3,10 @@
   padding: 0 var(--spacing-md);
 }
 
-.Logo {
-  width: 350px;
+.logo {
+  width: 300px;
   max-width: 100%;
+  margin-top: var(--spacing-lg);
 }
 
 .text {
@@ -15,9 +16,10 @@
 }
 
 .text h1 {
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-xl);
   line-height: var(--line-height-heading);
-  font-weight: var(--font-weight-bolder);
+  font-family: var(--font-secondary);
+  width: 80%;
 }
 
 .text p {
@@ -38,11 +40,12 @@
   }
 
   .logo {
-    width: 250px;
+    width: 200px;
   }
 
   .text h1 {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg-2);
+    width: 100%;
   }
 
   .buttons {

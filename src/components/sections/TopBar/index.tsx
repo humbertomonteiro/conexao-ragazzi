@@ -4,8 +4,8 @@ import styles from "./topBar.module.css";
 const TopBar = () => {
   return (
     <div className={styles.topBar}>
-      <p>harum quis quasi aliquid expedita explicabo .</p>
-      <ButtonPrimary data-button-color="primary">aproveite</ButtonPrimary>
+      <p>Não perca essa oportunidade!</p>
+      <ButtonPrimary data-button-color="primary">participar</ButtonPrimary>
     </div>
   );
 };
