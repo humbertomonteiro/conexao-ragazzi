@@ -3,7 +3,7 @@ import styles from "./speaker.module.css";
 interface SpeakerProps {
   name: string;
   image: string;
-  description: string;
+  description?: string;
 }
 
 export default function Speaker({ name, image, description }: SpeakerProps) {
@@ -14,7 +14,7 @@ export default function Speaker({ name, image, description }: SpeakerProps) {
       </div>
       <div className={styles.content}>
         <h3>{name}</h3>
-        {/* <p>{description}</p> */}
+        <p>{description}</p>
       </div>
     </div>
   );
