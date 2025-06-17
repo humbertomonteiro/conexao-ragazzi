@@ -71,7 +71,7 @@ const speakers = [
       <Speaker
         name="Daniel Ragazzi - CE"
         image={danielRagazzi}
-        description="CEO Ragazzi Promotora Organizador"
+        description="CEO Ragazzi Promotora e Organizador do evento"
       />
     ),
   },
