@@ -9,6 +9,11 @@ import { useState } from "react";
 
 const questions = [
   {
+    question: "Existe diferença na categoria dos ingressos?",
+    answer: `Não! Todos os ingressos darão direito os mesmos benefícios. 
+    O LOTE PROMOCIONAL, será vendido até o dia 27/06/2025.`,
+  },
+  {
     question: "Como faço para adquirir o ingresso com 40% de desconto? ",
     answer: `É necessário ser parceiro da RAGAZZI PROMOTORA, caso não seja, 
     entre em contato e faça seu cadastro. Além disso, também é necessário 
@@ -18,7 +23,7 @@ const questions = [
   },
   {
     question: "O que está incluso no meu ingresso?",
-    answer: `Seu ingresso da direito a um pequeno coffe break no início do evento, 
+    answer: `Seu ingresso da direito a um coffee break no início do evento, 
       um kit de boas vindas, sorteio de brindes e também a assistir todas 
       as palestras durante o dia.`,
   },
@@ -29,8 +34,7 @@ const questions = [
 `,
   },
   {
-    question:
-      "No horário de almoço, existe local próximo para fazer essa refeição?",
+    question: "No horário de almoço, existe local próximo?",
     answer: `Lembrando que o almoço NÃO está incluso no valor no ingresso, porém, no 
       próprio hotel existe um bom restaurante, além de diversas barracas de praia 
       localizadas próximas ao hotel.`,
