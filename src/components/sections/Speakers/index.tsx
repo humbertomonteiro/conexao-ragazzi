@@ -5,7 +5,7 @@ import Speaker from "../../templates/Speaker";
 import CaroselSimple from "../../shared/CaroselSimple";
 import ButtonPrimary from "../../shared/ButtonPrimary";
 
-import danielRagazzi from "../../../assets/images/speakers/daniel-ragazzi.jpeg";
+// import danielRagazzi from "../../../assets/images/speakers/daniel-ragazzi.jpeg";
 import fabianoRebello from "../../../assets/images/speakers/fabiano-rebello.jpeg";
 import julianaBorges from "../../../assets/images/speakers/juliana-borges.jpeg";
 import rogerChagas from "../../../assets/images/speakers/roger-chagas.jpeg";
@@ -14,16 +14,16 @@ import yasminMelo from "../../../assets/images/speakers/yasmin-melo.jpeg";
 // import marcosVieira from '../../../assets/speakers/marcos-vieira.jpeg'
 
 const speakers = [
-  {
-    name: "Daniel Ragazzi - CE ",
-    content: (
-      <Speaker
-        name="Daniel Ragazzi - CE"
-        image={danielRagazzi}
-        description="CEO Ragazzi Promotora"
-      />
-    ),
-  },
+  // {
+  //   name: "Daniel Ragazzi - CE ",
+  //   content: (
+  //     <Speaker
+  //       name="Daniel Ragazzi - CE"
+  //       image={danielRagazzi}
+  //       description="CEO Ragazzi Promotora"
+  //     />
+  //   ),
+  // },
   {
     name: "Fabiano Rebello - SP",
     content: (
@@ -41,7 +41,7 @@ const speakers = [
       <Speaker
         name="Juliana Borges - BA"
         image={julianaBorges}
-        description="Superintendente Regional da Qualibanking"
+        description="Regional Qualibanking"
       />
     ),
   },
@@ -58,13 +58,21 @@ const speakers = [
   {
     name: "Taise Pimenta - RJ",
     content: (
-      <Speaker name="Taise Pimenta - RJ" image={taisePimenta} description="" />
+      <Speaker
+        name="Taise Pimenta - RJ"
+        image={taisePimenta}
+        description="Mentora de Alta Performance"
+      />
     ),
   },
   {
     name: "Yasmin Melo - SP",
     content: (
-      <Speaker name="Yasmin Melo - SP" image={yasminMelo} description="" />
+      <Speaker
+        name="Yasmin Melo - SP"
+        image={yasminMelo}
+        description="CEO i9Fintech"
+      />
     ),
   },
 ];
