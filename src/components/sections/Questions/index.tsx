@@ -10,7 +10,7 @@ import { useState } from "react";
 const questions = [
   {
     question: "Existe diferença na categoria dos ingressos?",
-    answer: `Não! Todos os ingressos darão direito os mesmos benefícios. 
+    answer: `Não! Todos os ingressos darão direito aos mesmos benefícios. 
     O LOTE PROMOCIONAL, será vendido até o dia 27/06/2025.`,
   },
   {
