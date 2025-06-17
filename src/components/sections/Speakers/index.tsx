@@ -41,7 +41,7 @@ const speakers = [
       <Speaker
         name="Juliana Borges - BA"
         image={julianaBorges}
-        description="Superintendente da Qualibanking"
+        description="Superintendente Regional da Qualibanking"
       />
     ),
   },
@@ -58,21 +58,13 @@ const speakers = [
   {
     name: "Taise Pimenta - RJ",
     content: (
-      <Speaker
-        name="Taise Pimenta - RJ"
-        image={taisePimenta}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      />
+      <Speaker name="Taise Pimenta - RJ" image={taisePimenta} description="" />
     ),
   },
   {
     name: "Yasmin Melo - SP",
     content: (
-      <Speaker
-        name="Yasmin Melo - SP"
-        image={yasminMelo}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      />
+      <Speaker name="Yasmin Melo - SP" image={yasminMelo} description="" />
     ),
   },
 ];
