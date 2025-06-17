@@ -57,6 +57,18 @@
   cursor: pointer;
 }
 
+.questionHeader svg {
+  font-size: var(--font-size-md);
+}
+
+.questionIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
 .question[data-active="true"] .questionHeader svg {
   transform: rotate(180deg);
 }
@@ -75,5 +87,14 @@
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+  }
+
+  .questionHeader h3 {
+    font-size: var(--font-size-xs);
+  }
+
+  .questionIcon {
+    width: 15px;
+    height: 15px;
   }
 }

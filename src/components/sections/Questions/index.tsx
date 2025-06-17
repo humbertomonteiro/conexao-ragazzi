@@ -92,7 +92,9 @@ export default function Questions() {
             >
               <div className={styles.questionHeader}>
                 <h3>{question.question}</h3>
-                <FaChevronDown />
+                <div className={styles.questionIcon}>
+                  <FaChevronDown />
+                </div>
               </div>
               <p>{question.answer}</p>
             </div>
