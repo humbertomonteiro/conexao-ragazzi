@@ -12,6 +12,13 @@
   max-width: 100%;
 }
 
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .textContent h1 {
   font-size: var(--font-size-xl);
   line-height: var(--line-height-heading);
@@ -22,10 +29,15 @@
   margin-bottom: var(--spacing-sm);
 }
 
-.text p {
+.textContent p {
   color: var(--text-light-2);
   text-align: center;
   line-height: var(--line-height-base);
+}
+
+.textContent strong {
+  text-align: center;
+  margin-top: var(--spacing-sm);
 }
 
 .buttons {

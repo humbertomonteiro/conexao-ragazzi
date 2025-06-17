@@ -1,6 +1,7 @@
 .topBar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: var(--spacing-sm);
   align-items: center;
   padding: var(--spacing-xs) var(--spacing-sm);
   background-image: var(--secondary-color-transparent);
@@ -12,4 +13,10 @@
   border-bottom: 1px solid var(--border-color);
   z-index: 1000;
   font-size: var(--font-size-sm);
+}
+
+@media (max-width: 768px) {
+  .topBar {
+    font-size: 12px;
+  }
 }

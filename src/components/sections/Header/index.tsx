@@ -28,6 +28,7 @@ const Header = () => {
               única de se atualizar, entender as novas tendências e impulsionar
               seus resultados.
             </p>
+            <strong>Atenção: VAGAS LIMITADAS</strong>
           </div>
           {/* <strong>12 de Julho das 8:30h às 16:30h</strong> */}
           <div className={styles.buttons}>
