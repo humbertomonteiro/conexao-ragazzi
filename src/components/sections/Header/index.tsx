@@ -19,6 +19,11 @@ const Header = () => {
           data-aos="fade-down"
         >
           <div className={styles.textContent}>
+            {/* <h1>
+              Prepare-se para uma imersão de{" "}
+              <div className={styles.textColorfull}>conhecimento</div> &{" "}
+              <div className={styles.textColorfull}>transformação</div>.
+            </h1> */}
             <h1>
               Prepare-se para uma imersão de conhecimento e transformação.
             </h1>

@@ -29,6 +29,11 @@
   margin-bottom: var(--spacing-sm);
 }
 
+.textColorfull {
+  color: var(--primary-color);
+  display: inline;
+}
+
 .textContent p {
   color: var(--text-light-2);
   text-align: center;

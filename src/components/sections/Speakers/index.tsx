@@ -80,7 +80,7 @@ const speakers = [
 export default function Speakers() {
   return (
     <Section>
-      <Title>Convidados</Title>
+      <Title>Palestrantes</Title>
       <div className={styles.container} data-aos="zoom-in">
         <CaroselSimple listSlides={speakers} slidesPerViewPropsMobile={1} />
       </div>
