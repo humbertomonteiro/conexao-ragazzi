@@ -10,8 +10,9 @@ import Speakers from "../../components/sections/Speakers";
 // import AboutUs from "../../components/sections/AboutUs";
 import AboutEvent from "../../components/sections/AboutEvent";
 
-import newCorban from "../../assets/images/sponsors/new-corban.jpeg";
+import newCorban from "../../assets/images/sponsors/new-corban.png";
 import qualiBanking from "../../assets/images/sponsors/quali-banking.png";
+// import Organizers from "../../components/sections/Oganizers";
 
 const listSlides = [
   {
@@ -40,6 +41,7 @@ const Home = () => {
       <Benefits />
       <Location />
       <CarouselScrollInfinit listSlides={listSlides} />
+      {/* <Organizers /> */}
       <Questions />
       <Footer />
     </div>
