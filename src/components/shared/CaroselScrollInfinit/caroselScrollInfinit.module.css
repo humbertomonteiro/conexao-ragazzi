@@ -18,7 +18,7 @@
 .card {
   width: 230px;
   border-radius: 1.5rem;
-  /* padding: 20px; */
+  padding: 20px;
   font-size: xx-large;
   justify-content: center;
   align-items: center;
@@ -36,7 +36,7 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding-right: 40px;
+  padding-right: 90px;
   will-change: transform;
   animation: scrolling 15s linear infinite;
 }
@@ -60,6 +60,12 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .group {
+    padding-right: 40px;
   }
 }
 

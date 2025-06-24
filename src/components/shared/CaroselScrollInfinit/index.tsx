@@ -5,12 +5,16 @@ import ButtonPrimary from "../ButtonPrimary";
 
 interface CarouselScrollInfinitProps {
   listSlides: any[];
+  title: string;
 }
 
-const CarouselScrollInfinit = ({ listSlides }: CarouselScrollInfinitProps) => {
+const CarouselScrollInfinit = ({
+  listSlides,
+  title,
+}: CarouselScrollInfinitProps) => {
   return (
     <Section sectionSecondary={true}>
-      <Title>Patrocinadores</Title>
+      <Title>{title}</Title>
       <div className={styles.carousel} data-aos="zoom-in">
         <div className={styles.group}>
           {listSlides.map((item, index) => (
