@@ -6,8 +6,8 @@ import ad from "../../../assets/images/support/ad.png";
 import bevi from "../../../assets/images/support/bevi.png";
 // import gft from "../../../assets/images/support/gft.jpg";
 import gft from "../../../assets/images/support/gft-no-bg.png";
-// import nova from "../../../assets/images/support/nova.jpeg";
-import nova from "../../../assets/images/support/nova-no-bg.png";
+import nova from "../../../assets/images/support/nova.jpeg";
+// import nova from "../../../assets/images/support/nova-no-bg.png";
 
 const listSlides = [
   {
