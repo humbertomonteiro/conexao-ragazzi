@@ -174,11 +174,11 @@ export default function FormDataPartner() {
             </div>
           </label>
           <label className={styles.label}>
-            <p>Loja</p>
+            <p>Nome da empresa</p>
             <input
               type="text"
               name="store"
-              placeholder="Ex: Loja Centro"
+              placeholder="Ex: Ragazzi"
               value={formData.store}
               onChange={handleChange}
               className={styles.input}

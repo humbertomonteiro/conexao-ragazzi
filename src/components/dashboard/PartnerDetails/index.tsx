@@ -163,7 +163,7 @@ export default function PartnerDetails({
               </div>
             </label>
             <label className={styles.label}>
-              <p>Loja</p>
+              <p>Nome da empresa</p>
               <input
                 type="text"
                 name="store"
@@ -222,7 +222,7 @@ export default function PartnerDetails({
               {partner.isPartner ? "Sim" : "Não"}
             </p>
             <p className={styles.detailItem}>
-              <strong>Loja:</strong> {partner.store}
+              <strong>Nome da empresa:</strong> {partner.store}
             </p>
             <p className={styles.detailItem}>
               <strong>Função:</strong> {partner.role}
