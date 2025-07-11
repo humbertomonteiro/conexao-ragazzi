@@ -2,6 +2,9 @@ import { BrowserRouter } from "react-router-dom";
 import RoutesApp from "./routes/RoutesApp";
 import { useEffect } from "react";
 
+import { UserProvider } from "./Contexts/UserContext";
+import { PartnerProvider } from "./Contexts/PartnerContext";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -22,7 +25,11 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <RoutesApp />
+        <UserProvider>
+          <PartnerProvider>
+            <RoutesApp />
+          </PartnerProvider>
+        </UserProvider>
       </BrowserRouter>
       <div className="glow glow-bottom-left"></div>
       <div className="glow glow-top-right"></div>

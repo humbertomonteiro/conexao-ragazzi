@@ -1,0 +1,128 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.651);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-color-2);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-md);
+  width: 500px;
+  max-width: var(--container-max-width-percentege);
+}
+
+.title {
+  color: var(--text-light);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-sm);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+.label p {
+  color: var(--text-light-3);
+  font-size: var(--font-size-sm);
+}
+
+.input {
+  width: 100%;
+  height: var(--input-height);
+  border-radius: var(--border-radius-md);
+  background-color: var(--quartenary-color);
+  color: var(--text-light-2);
+  border: 1px solid var(--border-color-2);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--tertiary-color);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.detailItem {
+  color: var(--text-light-2);
+  font-size: var(--font-size-sm);
+  padding: var(--spacing-xs) 0;
+  border-bottom: 1px solid var(--border-color-2);
+}
+
+.detailItem strong {
+  color: var(--text-light-3);
+}
+
+.buttonGroup {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.button,
+.deleteButton,
+.cancelButton {
+  background-color: var(--tertiary-color);
+  color: var(--text-light);
+  padding: var(--button-padding);
+  border-radius: var(--border-radius-sm);
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #1e40af;
+}
+
+.button:disabled {
+  opacity: 0.5;
+}
+
+.deleteButton {
+  background-color: var(--primary-color);
+}
+
+.deleteButton:hover:not(:disabled) {
+  background-color: #a10000;
+}
+
+.cancelButton {
+  background-color: var(--quartenary-color);
+}
+
+.cancelButton:hover {
+  background-color: #494a4d;
+}
+
+.error {
+  color: var(--primary-color);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.loading {
+  color: var(--text-light-2);
+  font-size: var(--font-size-sm);
+  text-align: center;
+}

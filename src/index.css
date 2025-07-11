@@ -9,8 +9,12 @@
 
 :root {
   /* Cores Principais */
-  --primary-color: #b71515; /* Cor principal, ex.: azul para botões e destaques */
-  --secondary-color: #212529; /* Cor secundária, ex.: cinza para textos secundários */
+  --primary-color: #680304;
+  --primary-color-2: #960002;
+  --secondary-color: #212529;
+  --tertiary-color: #1e40af;
+  --quartenary-color: #33393f;
+  --black-color: #000;
   --primary-color-transparent: linear-gradient(to right, #000000de);
   --secondary-color-transparent: linear-gradient(
     135deg,
@@ -27,54 +31,57 @@
   --quaternary-color-transparent: #000000ef;
   --background-color-light: #f8f9fa;
   --success-color: #28a745;
+  --error-color: #f87171;
   --warning-color: #ffc107;
   --border-color: #a55259;
   --border-color-2: #c0c0c050;
-  --text-light: #fff5f0; /* Cor para textos em fundos escuros */
-  --text-light-2: #dfdfdf; /* Cor para textos em fundos escuros */
+  --text-light: #fff5f0;
+  --text-light-2: #dfdfdf;
+  --text-light-3: #9ca3af;
   --text-dark: #212529;
 
   /* Tipografia */
   --font-primary: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    sans-serif; /* Fonte principal */
-  --font-secondary: "Montserrat", sans-serif; /* Fonte secundária para títulos ou destaques */
-  --font-size-base: 16px; /* Tamanho base da fonte */
-  --font-size-xxs: 0.675rem; /* 11px - para textos menores */
-  --font-size-sm: 0.875rem; /* 14px - para textos menores */
-  --font-size-lg: 1.25rem; /* 20px - para subtítulos */
-  --font-size-lg-2: 1.7rem; /* 24px - para subtítulos */
-  --font-size-xl: 2rem; /* 32px - para títulos grandes */
-  --font-size-xxl: 3rem; /* 48px - para títulos grandes */
-  --font-weight-regular: 400; /* Peso regular */
-  --font-weight-bold: 700; /* Peso negrito */
-  --font-weight-bolder: 900; /* Peso negrito */
-  --line-height-base: 1.5; /* Altura da linha padrão */
-  --line-height-heading: 1.2; /* Altura da linha para cabeçalhos */
+    sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+  --font-size-base: 16px;
+  --font-size-xxs: 0.675rem;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-lg: 1.25rem;
+  --font-size-lg-2: 1.7rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 3rem;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-bolder: 900;
+  --line-height-base: 1.5;
+  --line-height-heading: 1.2;
 
   /* Espaçamentos */
-  --spacing-xs: 0.5rem; /* 8px - espaçamento pequeno */
-  --spacing-sm: 1rem; /* 16px - espaçamento padrão */
-  --spacing-md: 1.5rem; /* 24px - espaçamento médio */
-  --spacing-lg: 2rem; /* 32px - espaçamento grande */
-  --spacing-xl: 3rem; /* 48px - espaçamento extra grande */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
 
   /* Bordas e Sombras */
-  --border-radius-sm: 0.25rem; /* 4px - borda arredondada pequena */
-  --border-radius-md: 0.5rem; /* 8px - borda arredondada média */
-  --border-radius-lg: 1rem; /* 16px - borda arredondada grande */
-  --border-radius-xl: 1.5rem; /* 24px - borda arredondada extra grande */
-  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra padrão */
-  --box-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra para hover */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 1rem;
+  --border-radius-xl: 1.5rem;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
 
   /* Tamanhos de Componentes */
-  --button-padding: 0.75rem 1.5rem; /* Padding padrão para botões */
-  --input-height: 2.5rem; /* Altura padrão para inputs */
-  --container-max-width: 1200px; /* Largura máxima do container */
+  --button-padding: 0.75rem 1rem;
+  --input-height: 2.7rem;
+  --container-max-width: 1200px;
   --container-max-width-percentege: 92%;
 
   /* Transições */
-  --transition-fast: 0.2s ease-in-out; /* Transição rápida */
-  --transition-normal: 0.3s ease-in-out; /* Transição padrão */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
 }
 
 body {
