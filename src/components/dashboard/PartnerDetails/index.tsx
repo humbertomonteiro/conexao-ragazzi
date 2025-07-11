@@ -22,21 +22,30 @@ export default function PartnerDetails({
   useEffect(() => {
     const fetchPartner = async () => {
       try {
-        const data = state.partners.filter(
-          (partner) => partner.id === partnerId
-        )[0];
-        setPartner(data);
-        setFormData(data);
+        const data = state.partners.find((partner) => partner.id === partnerId);
+        if (data) {
+          setPartner(data);
+          setFormData(data);
+        } else {
+          setError("Parceiro não encontrado.");
+        }
       } catch (err) {
         setError("Erro ao carregar parceiro: " + err);
       }
     };
     fetchPartner();
-  }, [partnerId]);
+  }, [partnerId, state.partners]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => (prev ? { ...prev, [name]: value } : null));
+    const { name, value, type, checked } = e.target;
+    setFormData((prev) =>
+      prev
+        ? {
+            ...prev,
+            [name]: type === "checkbox" ? checked : value,
+          }
+        : null
+    );
   };
 
   const validateForm = (): boolean => {
@@ -47,10 +56,6 @@ export default function PartnerDetails({
     }
     if (!formData.phone.match(/^\(\d{2}\)\s\d{5}-\d{4}$/)) {
       setError("O telefone deve estar no formato (99) 99999-9999.");
-      return false;
-    }
-    if (!formData.isPartner.trim()) {
-      setError("O campo 'Parceiro Ragazzi' é obrigatório.");
       return false;
     }
     if (!formData.store.trim()) {
@@ -142,16 +147,20 @@ export default function PartnerDetails({
             </label>
             <label className={styles.label}>
               <p>Parceiro Ragazzi</p>
-              <input
-                type="text"
-                name="isPartner"
-                value={formData?.isPartner || ""}
-                onChange={handleChange}
-                className={styles.input}
-                required
-                aria-label="Status de parceiro Ragazzi"
-                disabled={isSubmitting}
-              />
+              <div className={styles.toggleContainer}>
+                <input
+                  type="checkbox"
+                  name="isPartner"
+                  checked={formData?.isPartner || false}
+                  onChange={handleChange}
+                  className={styles.toggleInput}
+                  aria-label="Parceiro Ragazzi (Sim ou Não)"
+                  disabled={isSubmitting}
+                />
+                <span className={styles.toggleLabel}>
+                  {formData?.isPartner ? "Sim" : "Não"}
+                </span>
+              </div>
             </label>
             <label className={styles.label}>
               <p>Loja</p>
@@ -209,7 +218,8 @@ export default function PartnerDetails({
               <strong>Telefone:</strong> {partner.phone}
             </p>
             <p className={styles.detailItem}>
-              <strong>Parceiro Ragazzi:</strong> {partner.isPartner}
+              <strong>Parceiro Ragazzi:</strong>{" "}
+              {partner.isPartner ? "Sim" : "Não"}
             </p>
             <p className={styles.detailItem}>
               <strong>Loja:</strong> {partner.store}

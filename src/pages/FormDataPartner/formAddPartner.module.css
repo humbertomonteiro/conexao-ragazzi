@@ -64,6 +64,58 @@ input:focus {
   outline: none;
 }
 
+.toggleContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.toggleContainer span {
+  color: var(--text-light-3);
+  font-size: var(--font-size-xs);
+}
+
+.toggleInput {
+  appearance: none;
+  width: 50px;
+  height: 26px;
+  background: var(--text-light-3);
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color var(--transition-normal);
+}
+
+.toggleInput:checked {
+  background: var(--primary-color);
+}
+
+.toggleInput::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--text-light);
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform var(--transition-normal);
+}
+
+.toggleInput:checked::before {
+  transform: translateX(23px);
+}
+
+.toggleInput:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.toggleLabel {
+  color: var(--text-light-2);
+  font-size: var(--font-size-sm);
+}
+
 .button {
   background-color: var(--primary-color);
   color: var(--text-light);

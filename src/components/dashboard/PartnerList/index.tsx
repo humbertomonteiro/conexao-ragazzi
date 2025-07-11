@@ -39,10 +39,8 @@ export default function PartnerList() {
   };
 
   // Filtrar parceiros
-  const filteredPartners = partners.filter(
-    (partner) =>
-      partner.name.toLowerCase().includes(filter.toLowerCase()) ||
-      partner.isPartner.toLowerCase().includes(filter.toLowerCase())
+  const filteredPartners = partners.filter((partner) =>
+    partner.name.toLowerCase().includes(filter.toLowerCase())
   );
 
   // Calcular índices para paginação
@@ -111,8 +109,8 @@ export default function PartnerList() {
           <input
             onChange={(e) => setFilter(e.target.value)}
             type="text"
-            placeholder="Buscar por nome ou parceiro"
-            aria-label="Buscar parceiros por nome ou parceiro"
+            placeholder="Buscar por nome"
+            aria-label="Buscar parceiros por nome"
           />
         </div>
       </div>
@@ -153,7 +151,9 @@ export default function PartnerList() {
             {currentPartners.map((partner) => (
               <tr key={partner.id} className={styles.tableRow}>
                 <td className={styles.tableCell}>{partner.name}</td>
-                <td className={styles.tableCell}>{partner.isPartner}</td>
+                <td className={styles.tableCell}>
+                  {partner.isPartner ? "Sim" : "Não"}
+                </td>
                 <td className={styles.tableCell} data-table-role="true">
                   {partner.role}
                 </td>

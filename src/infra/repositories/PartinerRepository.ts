@@ -14,7 +14,7 @@ interface Partner {
   id?: string;
   name: string;
   phone: string;
-  isPartner: string;
+  isPartner: boolean;
   store: string;
   role: string;
   createdAt?: Date;

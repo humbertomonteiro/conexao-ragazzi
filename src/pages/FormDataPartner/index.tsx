@@ -13,7 +13,7 @@ export default function FormDataPartner() {
   const [formData, setFormData] = useState<PartnerFormData>({
     name: "",
     phone: "",
-    isPartner: "",
+    isPartner: false,
     store: "",
     role: "",
   });
@@ -29,7 +29,19 @@ export default function FormDataPartner() {
       | React.ChangeEvent<HTMLInputElement>
       | { target: { name: string; value: string } }
   ) => {
-    const { name, value } = e.target;
+    let name: string;
+    let value: string | boolean;
+
+    if ("type" in e.target) {
+      // Evento de input nativo (texto ou checkbox)
+      name = e.target.name;
+      value = e.target.type === "checkbox" ? e.target.checked : e.target.value;
+    } else {
+      // Evento do IMaskInput
+      name = e.target.name;
+      value = e.target.value;
+    }
+
     setFormData((prev) => ({
       ...prev,
       [name]: value,
@@ -49,14 +61,6 @@ export default function FormDataPartner() {
       setModalState({
         isOpen: true,
         message: "O telefone deve estar no formato (99) 99999-9999.",
-        type: "error",
-      });
-      return false;
-    }
-    if (!formData.isPartner.trim()) {
-      setModalState({
-        isOpen: true,
-        message: "O campo 'Parceiro Ragazzi' é obrigatório.",
         type: "error",
       });
       return false;
@@ -95,7 +99,7 @@ export default function FormDataPartner() {
       setFormData({
         name: "",
         phone: "",
-        isPartner: "",
+        isPartner: false,
         store: "",
         role: "",
       });
@@ -143,7 +147,7 @@ export default function FormDataPartner() {
               mask="(00) 00000-0000"
               value={formData.phone}
               onAccept={(value: string) =>
-                handleChange({ target: { name: "phone", value } } as any)
+                handleChange({ target: { name: "phone", value } })
               }
               className={styles.input}
               placeholder="(99) 99999-9999"
@@ -154,17 +158,20 @@ export default function FormDataPartner() {
           </label>
           <label className={styles.label}>
             <p>Parceiro Ragazzi</p>
-            <input
-              type="text"
-              name="isPartner"
-              placeholder="Ex: Ragazzi Promotora"
-              value={formData.isPartner}
-              onChange={handleChange}
-              className={styles.input}
-              required
-              aria-label="Status de parceiro Ragazzi"
-              disabled={isSubmitting}
-            />
+            <div className={styles.toggleContainer}>
+              <input
+                type="checkbox"
+                name="isPartner"
+                checked={formData.isPartner}
+                onChange={handleChange}
+                className={styles.toggleInput}
+                aria-label="Parceiro Ragazzi (Sim ou Não)"
+                disabled={isSubmitting}
+              />
+              <span className={styles.toggleLabel}>
+                {formData.isPartner ? "Sim" : "Não"}
+              </span>
+            </div>
           </label>
           <label className={styles.label}>
             <p>Loja</p>
