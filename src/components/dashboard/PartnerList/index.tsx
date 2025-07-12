@@ -121,7 +121,9 @@ export default function PartnerList() {
           {currentPartners.map((partner) => (
             <div key={partner.id} className={styles.card}>
               <h3 className={styles.cardTitle}>{partner.name}</h3>
-              <p className={styles.cardInfo}>Parceiro: {partner.isPartner}</p>
+              <p className={styles.cardInfo}>
+                Parceiro: {partner.isPartner ? "Sim" : "Não"}
+              </p>
               <p className={styles.cardInfo}>Cargo: {partner.role}</p>
               <p className={styles.cardInfo}>Telefone: {partner.phone}</p>
               <button
