@@ -7,8 +7,8 @@ export const exportPartnersToExcel = (partners: Partner[]): void => {
     ID: partner.id,
     Nome: partner.name,
     Telefone: partner.phone,
-    "Parceiro Ragazzi": partner.isPartner,
-    Loja: partner.store,
+    "Parceiro Ragazzi": partner.isPartner ? "sim" : "Não",
+    "Nome da empresa": partner.store,
     Função: partner.role,
     "Criado em": partner.createdAt
       ? new Date(partner.createdAt).toLocaleDateString("pt-BR")
